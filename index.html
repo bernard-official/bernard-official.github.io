@@ -1,0 +1,244 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BD-NTERFUL</title>
+    <link rel="stylesheet" href="style.css">    
+    <script src="https://kit.fontawesome.com/5f3dbbe571.js" crossorigin="anonymous"></script>
+</head>
+ <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo">NTERFUL BERNARD</h1>
+                
+                <ul id="sidemenu">
+                    <li><a href="#header">home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>frontend developer</p>
+                <h1>Hi, i'm <span>Bernard</span> from <span>Ghana</span>.  </h1>
+
+            </div>
+        </div>
+    </div>
+     <!------------about---------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/user1.jpg" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>A self-taught front-end developer who devloped the passion
+                        for programming after being introduced to embedded systems.</p>
+                    
+                    <div class="tab-titles">
+                        <!------------added click event---------->
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web interfaces</li>
+                            <li><span>PROGRAMMING LANGUAGES</span><br>Javascript <br> HTML & CSS<br> C programming, MATLAB</li>
+                            <li><span>FRAMEWORKS AND LIBRARIES</span><br>Bootstrap <br>React<br> Arduino</li>
+                            <li><span>App Development</span><br>Building Android/IOS apps</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Portfolio Website</span><br>Created a professional and user-friendly portfolio website to showcase my
+                                skills and quality of work.
+                                Used HTML, CSS, and Bootstrap to develop a responsive and mobile-friendly
+                                website</li>
+                            <li><span>Cash Register Program</span><br>Designed a cash register drawer function using JavaScript code that accepts
+                                purchase price, payments, and cash-in-drawer as arguments and returns an
+                                object with a status key or a change key.
+                                Uses functional programming principles like higher-order functions to
+                                manipulate data input to solve complex functions.</li>
+                            <li><span>Roman Numeral Converter</span><br>Created a program that converts integers to Roman Numerals using raw
+                                JavaScript codes</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>University of Cape Coast, Cape Coast, Ghana
+                                August 2015 - May 2019</span><br> B.Sc
+                                Engineering Physics</li>
+                            <li><span>FreeCodeCamp - June 2022</span><br>JavaScript Algorithms and
+                                Data Structures </li>
+                            <li><span>Web3 schools</span><br>bootstrap 5 Framework <br>React Js</li>
+                        </ul>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <!------service------->
+    <div id ="services">
+        <div class="container">
+            <h1 class="sub-titles">My Services</h1>
+            <div class="services-list">
+                
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Web Design</h2>
+                    <p> Development of responsive desktop & mobile websites.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>UI/UX Design</h2>
+                    <p> Design user interfaces & user experience.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div><div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p> Development and design of mobile applications for 
+                        android and ios.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----portfolio-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1> 
+            <div class="work-list">
+                <div class="work">
+                    <img src="image/user3.jpg">
+                    <div class="layer">
+                        <h3>Portfolio webpage</h3>
+                        <p>Developed and desgined this portfolio webpage to demonstrate on first hand 
+                            the skills acquired. tools used for this projects HTML, CSS, JavaScript and Font Awesome.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/user3.jpg">
+                    <div class="layer">
+                        <h3>Social media App</h3>
+                        <p>Still under development.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/user2.jpg">
+                    <div class="layer">
+                        <h3>Cash Register Program
+                           JavaScript raw code</h3>
+                        <p> Designed a cash register drawer that accepts
+                            purchase price, payments, and cash-in-drawer and returns an
+                            object with a status key or a change key.
+                        </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+            <a href="#" class="btn">see more</a>
+        </div>
+    </div>
+    <!---------c0ntact---------->
+   <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>bdnterful@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>+233547780417</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="image/Bernard's Programming Resume.pdf" download 
+                    class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Enter Name" required>
+                        <input type="email" name="Email" placeholder="Enter Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Bernard.</p>
+        </div>
+   </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <!--2nd script for clicking of menue on small screen-->
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwq5IRlYueoQuZYfo_ZAaTqta96WYJ6sKH-b9NV4vpcvI8OtS-_26uDpcltiBuBx5V8cQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML =""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+ </body> 
+ </html>
