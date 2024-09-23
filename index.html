@@ -1,249 +1,400 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BD-NTERFUL</title>
-    <link rel="stylesheet" href="style.css">    
-    <script src="https://kit.fontawesome.com/5f3dbbe571.js" crossorigin="anonymous"></script>
-</head>
- <body>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/5f3dbbe571.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <div id="header">
-        <div class="container">
-            <nav>
-                <h1 class="logo">NTERFUL BERNARD</h1>
-                
-                <ul id="sidemenu">
-                    <li><a href="#header">home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fas fa-times" onclick="closemenu()"></i>
-                </ul>
-                <i class="fas fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <p>frontend developer</p>
-                <h1>Hi, i'm <span>Bernard</span> from <span>Ghana</span>.  </h1>
+      <div class="container">
+        <nav>
+          <h1 class="logo">NTERFUL BERNARD</h1>
 
-            </div>
+          <ul id="sidemenu">
+            <li><a href="#header">home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Software developer</p>
+          <h1>Hi, i'm <span>Bernard</span>.</h1>
+          <p>
+            I specialize in delivering cutting-edge <span>IT</span> and
+            <span>software</span> solutions designed to meet the unique
+            challenges of your business. From custom software development to IT
+            infrastructure optimization, we offer a range of services that drive
+            efficiency, growth, and digital transformation. Partner with us to
+            take your business to the next level with technology that works for
+            you.
+          </p>
         </div>
+      </div>
     </div>
-     <!------------about---------->
+    <!------------about---------->
 
     <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="image/user1.jpg" >
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About me</h1>
-                    <p>A self-taught front-end developer who devloped the passion
-                        for programming after being introduced to embedded systems.</p>
-                    
-                    <div class="tab-titles">
-                        <!------------added click event---------->
-                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                            <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>UI/UX</span><br>Designing Web interfaces</li>
-                            <li><span>PROGRAMMING LANGUAGES</span><br>Javascript <br> HTML & CSS<br> C programming, MATLAB</li>
-                            <li><span>FRAMEWORKS AND LIBRARIES</span><br>Bootstrap <br>React<br> MongoDB <br> Arduino  </li>
-                            <li><span>App Development</span><br>Building Android/IOS apps</li>
-                        </ul>
-                    </div>
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="image/user1.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p>
+              A self-taught software developer with years of experience in IT
+              roles and building customized web solutions with a focus on
+              delivering high-quality results and continuous learning.
+            </p>
 
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>Portfolio Website</span><br>Created a professional and user-friendly portfolio website to showcase my
-                                skills and quality of work.
-                                Used HTML, CSS, and Bootstrap to develop a responsive and mobile-friendly
-                                website
-                            </li>
-                            <li><span>Calculator <a style="color: rgb(224, 127, 127);" href="https://github.com/bernard-official/calculator-React">
-                                <i class="fas fa-external-link-alt"></i></a></span>
-                                <br>This project was built without the use of JavaScript math
-                                libraries.The technologies used were React, React-Router 4.0, and React Hooks.     
-                            </li>
-                            <li><span>Cash Register Program</span><br>Designed a cash register drawer function using JavaScript code that accepts
-                                purchase price, payments, and cash-in-drawer as arguments and returns an
-                                object with a status key or a change key.
-                                Uses functional programming principles like higher-order functions to
-                                manipulate data input to solve complex functions.</li>
-                        </ul>
-                    </div>
-
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>University of Cape Coast, Cape Coast, Ghana
-                                August 2015 - May 2019</span><br> B.Sc
-                                Engineering Physics</li>
-                            <li><span>FreeCodeCamp - June 2022</span><br>JavaScript Algorithms and
-                                Data Structures </li>
-                            <li><span>Web3 schools</span><br>bootstrap 5 Framework <br>React Js</li>
-                            <li><span> Udacity - September 2022</span><br>AWS Machine Learning Foundations </li>
-                        </ul>
-                    </div>
-                </div> 
+            <div class="tab-titles">
+              <!------------added click event---------->
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
             </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>FRONTEND & UI/UX</span><br />Responsive Web Design
+                </li>
+                <li>
+                  <span>PROGRAMMING LANGUAGES</span><br />Python
+                  <br />Javascript <br />TypeScript <br />
+                  HTML & CSS<br />
+                  Node
+                </li>
+                <li>
+                  <span>FRAMEWORKS AND PROJECT MANAGEMENT TOOLS</span>
+                  <br />Nextjs <br />React<br />
+                  MongoDB <br />Express<br />
+                  Jira
+                </li>
+                <li>
+                  <span>ENGINEERING</span><br />Physics, Mathematical Modelling and
+                  Analytics <br />
+                  Data Analysis and Interpretation
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span
+                    >Vender Management System
+                    <a
+                      style="color: rgb(224, 127, 127)"
+                      href="https://dev--vendr-gh.netlify.app/"
+                    >
+                      <i class="fas fa-external-link-alt"></i>
+                    </a>
+                  </span>
+                  <br />Implemented the responsive web interface for a vendor
+                  management system utilizing Next.js & Material UI. Contributed
+                  to the development of reusable table components for displaying
+                  vendor list, leading to a 20% decrease in overall development
+                  time. Collaborated closely with the team to seamlessly
+                  integrate the database, ensuring efficient data flow and
+                  manipulation for optimal system performance.
+                </li>
+
+                <li>
+                  <span>Everything LLC (Frontend developer)</span>
+                  <br />
+                  Transformed UI/UX designs into a functioning and responsive
+                  enterprise web application for clients. Collaborated closely
+                  with stakeholders to understand their requirements, resulting
+                  in a user-friendly interface that improved and streamlined
+                  administrative task and workflow processes. Successfully
+                  integrated authentication protocols and security measures to
+                  enhance user login security and end-to-end encryption for
+                  various projects, achieving zero reported security breaches.
+                  Collaborated with cross-functional teams in an Agile Scrum
+                  environment, to deliver high-quality, scalable applications
+                  from concept to deployment. Responsible for transforming a
+                  static web application for a shipping company, resulting in a
+                  30% increase in website responsiveness and 50% improvement in
+                  site load times.
+                </li>
+
+                <li>
+                  <span>Angel Ash Designs </span><br />
+                  Designed and developed a fully functional eCommerce web
+                  application for client, integrating user-friendly front-end
+                  interfaces with robust server-side logic. Managed post-launch
+                  support, including ongoing updates, functionality
+                  improvements, and maintenance to ensure optimal performance
+                  and user satisfaction.
+                </li>
+
+                <li>
+                  <span>Portfolio Website</span><br />Created a professional and
+                  user-friendly portfolio website to showcase my skills and
+                  quality of work. Used HTML, CSS, and Bootstrap to develop a
+                  responsive and mobile-friendly website
+                </li>
+                <li>
+                  <span
+                    >Ghana Armed Forces 37 Military Hospital Unit (Technician
+                    /Diagnostic Radiographer)</span
+                  ><br />
+                  Served as a diagnostic radiographer 37military hospital unit
+                  during national service. Conducted routine system diagnoses on
+                  imaging machines, including Xray and Ct- Scan equipment, to
+                  identify malfunctions and ensure the provision of reliable
+                  services.
+                </li>
+
+                <li>
+                  <span
+                    >Calculator
+                    <a
+                      style="color: rgb(224, 127, 127)"
+                      href="https://github.com/bernard-official/calculator-React"
+                    >
+                      <i class="fas fa-external-link-alt"></i></a
+                  ></span>
+                  <br />This project was built without the use of JavaScript
+                  math libraries.The technologies used were React, React-Router
+                  4.0, and React Hooks.
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span
+                    >University of Cape Coast, Cape Coast, Ghana August 2015 -
+                    May 2019</span
+                  ><br />
+                  B.Sc Engineering Physics
+                </li>
+                <li>
+                  <span>FreeCodeCamp - June 2022</span><br />JavaScript
+                  Algorithms and Data Structures
+                </li>
+                <li>
+                  <span>Web3 schools</span><br />bootstrap 5 Framework
+                  <br />React Js
+                </li>
+                <li>
+                  <span> Udacity - September 2022</span><br />AWS Machine
+                  Learning Foundations
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!------service------->
-    <div id ="services">
-        <div class="container">
-            <h1 class="sub-titles">My Services</h1>
-            <div class="services-list">
-                
-                <div>
-                    <i class="fa-brands fa-app-store"></i>
-                    <h2>Web Design</h2>
-                    <p> Development of responsive desktop & mobile websites.
-                    </p>
-                    <a href="#">Learn more</a>
-                </div>
-                <div>
-                    <i class="fa-brands fa-app-store"></i>
-                    <h2>UI/UX Design</h2>
-                    <p> Design user interfaces & user experience.
-                    </p>
-                    <a href="#">Learn more</a>
-                </div><div>
-                    <i class="fa-brands fa-app-store"></i>
-                    <h2>App Design</h2>
-                    <p> Development and design of mobile applications for 
-                        android and ios.
-                    </p>
-                    <a href="#">Learn more</a>
-                </div>
-            </div>
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-titles">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>Web Development & E-Commerce Solutions</h2>
+            <p>
+              Building responsive, high-performance websites, web apps and
+              mobile websites. E-commerce platforms with secure payment
+              gateways. Maintenance and optimization services.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>UI/UX Design</h2>
+            <p>Design user interfaces & user experience.</p>
+            <a href="#">Learn more</a>
+          </div>
+          <!-- <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>
+              Development and design of mobile applications for android and ios.
+            </p>
+            <a href="#">Learn more</a>
+          </div> -->
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>IT Support and Automation Solutions</h2>
+            <p>
+                On-demand or contract-based IT support.
+                Hardware and software troubleshooting.
+                Remote desktop support and system upgrades.
+                Business process automation (RPA - Robotic Process Automation).
+                Workflow and productivity automation tools.
+                Integration of AI-powered tools for automated decision-making.
+            </p>
+            <!-- <a href="#">Learn more</a> -->
+          </div>
         </div>
+      </div>
     </div>
     <!----portfolio-->
     <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1> 
-            <div class="work-list">
-                <div class="work">
-                    <img src="image/user3.jpg">
-                    <div class="layer">
-                        <h3>Portfolio webpage</h3>
-                        <p>Developed and desgined this portfolio webpage to demonstrate on first hand 
-                            the skills acquired. tools used for this projects HTML, CSS, JavaScript and Font Awesome.</p>
-                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="image/crypto.jpg">
-                    <div class="layer">
-                        <h3>Crypto News</h3>
-                        <p>Still under development.The final product will be webpage for news update on cryptocurrencies</p>
-                        <a href="https://github.com/bernard-official/cryptoapp"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="image/dev.jpg">
-                    <div class="layer">
-                        <h3>Cash Register Program
-                           JavaScript raw code</h3>
-                        <p> Designed a cash register drawer that accepts
-                            purchase price, payments, and cash-in-drawer and returns an
-                            object with a status key or a change key.
-                        </p>
-                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                
+      <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+            <div class="work">
+              <img src="image/dev.jpg" />
+              <div class="layer">
+                <h3>Vendor Management System</h3>
+                <p>
+                  Keep track and manage multiple vendors across the globe with one platform.
+                </p>
+                <a href="https://dev--vendr-gh.netlify.app/"><i class="fas fa-external-link-alt"></i></a>
+              </div>
             </div>
-            <a href="#" class="btn">see more</a>
+          <div class="work">
+            <img src="image/user3.jpg" />
+            <div class="layer">
+              <h3>Portfolio webpage</h3>
+              <p>
+                This website is a demo project created to showcase my skills and expertise in web development. It highlights my ability to design, develop, and implement functional, responsive, and visually appealing solutions
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="image/crypto.jpg" />
+            <div class="layer">
+              <h3>Crypto News</h3>
+              <p>
+                Still under development.The final product will be webpage for
+                news update on cryptocurrencies
+              </p>
+              <a href="https://github.com/bernard-official/cryptoapp"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
         </div>
+        <a href="#" class="btn">see more</a>
+      </div>
     </div>
-    <!---------c0ntact---------->
-   <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fas fa-paper-plane"></i>bdnterful@gmail.com</p>
-                    <p><i class="fas fa-phone-square-alt"></i>+233547780417</p>
-                    <div class="social-icons">
-                        <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
-                        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-                        <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
-                        <a href="https://linkedin.com/"><i class="fab fa-linkedin"></i></a>
-                    </div>
-                    <a href="image/Bernard Resume.pdf" download 
-                    class="btn btn2">Download CV</a>
-                </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Enter Name" required>
-                        <input type="email" name="Email" placeholder="Enter Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <span id="msg"></span>
-                </div>
+    <!---------contact---------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fas fa-paper-plane"></i>bdnterful@gmail.com</p>
+            <p><i class="fas fa-phone-square-alt"></i>233203798578 / +233547780417</p>
+            <div class="social-icons">
+              <a href="https://facebook.com/"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+              <a href="https://instagram.com/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://linkedin.com/"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/bernard-official"
+                ><i class="fa-brands fa-github"></i>
+            </a>
             </div>
+            <a href="docs/Nterful Bernard Kojo .pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input
+                type="text"
+                name="Name"
+                placeholder="Enter Name"
+                required
+              />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Enter Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
         </div>
-        <div class="copyright">
-            <p>Copyright © Bernard.</p>
-        </div>
-   </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © Bernard.</p>
+      </div>
+    </div>
 
     <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
 
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link");
-            }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
         }
-
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
     </script>
 
-    <!--2nd script for clicking of menue on small screen-->
+    <!--2nd script for clicking of menu on small screen-->
     <script>
-        var sidemenu = document.getElementById("sidemenu");
+      var sidemenu = document.getElementById("sidemenu");
 
-        function openmenu(){
-            sidemenu.style.right = "0";
-        }
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
 
-        function closemenu(){
-            sidemenu.style.right = "-200px";
-        }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
     </script>
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbwq5IRlYueoQuZYfo_ZAaTqta96WYJ6sKH-b9NV4vpcvI8OtS-_26uDpcltiBuBx5V8cQ/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg")
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwq5IRlYueoQuZYfo_ZAaTqta96WYJ6sKH-b9NV4vpcvI8OtS-_26uDpcltiBuBx5V8cQ/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
 
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                msg.innerHTML = "Message sent successfully"
-                setTimeout(function(){
-                    msg.innerHTML =""
-                },5000)
-                form.reset()
-            })
-            .catch(error => console.error('Error!', error.message))
-        })
-      </script>
- </body> 
- </html>
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
